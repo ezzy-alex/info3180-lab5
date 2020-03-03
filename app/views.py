@@ -45,18 +45,11 @@ def login():
     form = LoginForm()
     if request.method == "POST":
 
-        # change this to actually validate the entire form submission
-        # and not just one field
+
         if form.validate_on_submit():
             username = form.username.data
             password = form.password.data
-            # Get the username and password values from the form.
 
-            # using your model, query database for a user based on the username
-            # and password submitted. Remember you need to compare the password hash.
-            # You will need to import the appropriate function to do so.
-            # Then store the result of that query to a `user` variable so it can be
-            # passed to the login_user() method below.
             user = UserProfile.query.filter_by(username = username).first()
             print("here")
             print(user.password)

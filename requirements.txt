@@ -3,7 +3,7 @@
 # Flask
 # ----------------------
 flask
-Flask-WTF
+Flask-wtf
 Flask-SQLAlchemy
 Flask-Migrate
 Flask-Script
