@@ -1,3 +1,4 @@
+
 # ----------------------
 # Flask
 # ----------------------
@@ -7,7 +8,7 @@ Flask-SQLAlchemy
 Flask-Migrate
 Flask-Script
 Flask-Login
-psycopg2
+psycopg2==2.8.4
 
 # ----------------------
 # Production Server
